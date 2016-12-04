@@ -46,3 +46,12 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+# Gems for image management
+
+gem 'carrierwave' # for file uploads also re-file?
+gem 'mini_magick' # for image modification
+gem 'fog'         # for connecting to aws cdn
+gem 'figaro'      # implementing security on app. Protecting variables from public.
+gem 'unf'         # Unicode normalization form support, helps with carrierwave integration.
