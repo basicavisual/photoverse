@@ -2,7 +2,7 @@
 
 <h1>Posts</h1>
 
-<table>
+<!-- <table>
   <thead>
     <tr>
       <th>Title</th>
@@ -12,20 +12,33 @@
     </tr>
   </thead>
 
-  <tbody>
-    <% @posts.each do |post| %>
+  <tbody> -->
+    <!-- <% @posts.each do |post| %>
       <tr>
-        <td><%= post.title %></td>
+        <td><%= link_to post.title %></td>
         <td><%= image_tag(post.photo.thumb.url) %></td>
         <td><%= post.description %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      </tr> -->
     <% end %>
-  </tbody>
+    <% @posts.each do |post| %>
+
+        <h2> <%= link_to post.title %> </h2>
+        <a href=" <%= post_url(post) %>"> <%= image_tag(post.photo.thumb.url) %> </a>
+        <%= post.description %>
+        <br>
+        <%= link_to 'Show', post %>
+        <%= link_to 'Edit', edit_post_path(post) %>
+        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <hr>
+    <% end %>
+
+
+  <!-- </tbody>
 </table>
 
-<br>
+<br> -->
 
 <%= link_to 'New Post', new_post_path %>
