@@ -1,0 +1,6 @@
+AWS_ACCESS_KEY_ID: 'AKIAJJQG3QD23W5J7FIA'
+AWS_SECRET_ACCESS_KEY: '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'
+development:
+  AWS_BUCKET: photoverse1x1-development
+production:
+  AWS_BUCKET: photoverse1x1-production
