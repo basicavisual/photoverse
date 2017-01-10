@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  photo: MyString
+  exiftitle: MyString
+  exifauthor: MyString
+  exifcamera: MyString
+  exiflocation: MyString
+  exifdate: MyString
+
+two:
+  title: MyString
+  photo: MyString
+  exiftitle: MyString
+  exifauthor: MyString
+  exifcamera: MyString
+  exiflocation: MyString
+  exifdate: MyString
