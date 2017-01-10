@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @photo.title %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= image_tag(@photo.photo.url) %>
+</p>
+
+<p>
+  <strong>Exiftitle:</strong>
+  <%= @photo.exiftitle %>
+</p>
+
+<p>
+  <strong>Exifauthor:</strong>
+  <%= @photo.exifauthor %>
+</p>
+
+<p>
+  <strong>Exifcamera:</strong>
+  <%= @photo.exifcamera %>
+</p>
+
+<p>
+  <strong>Exiflocation:</strong>
+  <%= @photo.exiflocation %>
+</p>
+
+<p>
+  <strong>Exifdate:</strong>
+  <%= @photo.exifdate %>
+</p>
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>

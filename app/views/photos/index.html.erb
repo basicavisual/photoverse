@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Photos</h1>
+
+<!-- <table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Photo</th>
+      <th>Exiftitle</th>
+      <th>Exifauthor</th>
+      <th>Exifcamera</th>
+      <th>Exiflocation</th>
+      <th>Exifdate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @photos.each do |photo| %>
+      <tr>
+        <td><%= photo.title %></td>
+        <td><%= photo.photo %></td>
+        <td><%= photo.exiftitle %></td>
+        <td><%= photo.exifauthor %></td>
+        <td><%= photo.exifcamera %></td>
+        <td><%= photo.exiflocation %></td>
+        <td><%= photo.exifdate %></td>
+        <td><%= link_to 'Show', photo %></td>
+        <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+        <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br> -->
+
+<%  @photos.each do |photo| %>
+
+  <h2><%= link_to photo.title %></h2>
+  <a href=" <%=photo_url(photo) %> "> <%= image_tag(photo.photo.thumb.url) %> </a>
+  <br>
+  <%= link_to 'Show', photo %>
+  <%= link_to 'Edit', edit_photo_path(photo) %>
+  <%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <hr>
+<% end %>
+
+<%= link_to 'New Photo', new_photo_path %>
