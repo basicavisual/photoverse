@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'rake', '~> 12.0'
 
-# gem 'devise', '~> 4.2'
+gem 'devise', '~> 4.2'
 
 
 group :development, :test do
