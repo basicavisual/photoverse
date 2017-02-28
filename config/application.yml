@@ -18,3 +18,7 @@ development:
   AWS_BUCKET: photoverse1x1-development
 production:
   AWS_BUCKET: photoverse1x1-production
+
+GMAIL_DOMAIN: gmail.com
+GMAIL_USERNAME: 1x1testing@gmail.com
+GMAIL_PASSWORD: holamundo
