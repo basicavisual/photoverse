@@ -26,6 +26,7 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
+
   <div class="field">
     <%= f.label :gender %><br />
     <%= f.collection_select :gender, Author::GENDERS, :to_s, :to_s,
