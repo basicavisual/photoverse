@@ -10,7 +10,7 @@
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email %>
   </div>
 
   <div class="field">
@@ -33,6 +33,12 @@
       :include_blank => true
       %>
   </div>
+
+  <div class="field">
+    <%= f.label :birthyear %><br />
+    <%= f.select_year(Date.today, start_year: 1992, end_year: 2007) :name,%>
+  </div>
+
 
   <div class="actions">
     <%= f.submit "Sign up" %>
